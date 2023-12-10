@@ -18,7 +18,7 @@
  *     global scope object.
  * @constructor
  */
-var Interpreter = function(code, opt_initFunc) {
+window.Interpreter = function(code, opt_initFunc) {
   if (typeof code === 'string') {
     code = this.parse_(code, 'code');
   }
